@@ -1,4 +1,4 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <time.h>
 #include <math.h>
 
@@ -28,15 +28,15 @@ int main()
 		a=pow(x+pow(fabs(y),1.0/4),1.0/3);
 		
 		
-		fprintf(logfile, "\n2.Parameters file “answer.txt” opened - %s", ctime(&tm)); // час відкриття файлу
+		fprintf(logfile, "\n2.Parameters file вЂњanswer.txtвЂќ opened - %s", ctime(&tm)); // С‡Р°СЃ РІС–РґРєСЂРёС‚С‚СЏ С„Р°Р№Р»Сѓ
 		fprintf(logfile,"X=%lf \t Y=%lf", x,y);
-		FILE *answer = fopen("answer", "wt"); // відкриття файлу для відповіді
+		FILE *answer = fopen("answer", "wt"); // РІС–РґРєСЂРёС‚С‚СЏ С„Р°Р№Р»Сѓ РґР»СЏ РІС–РґРїРѕРІС–РґС–
 		
 		fprintf(logfile, "\n \n3.Expression calculated - %s", ctime(&tm)); 
-		fprintf(answer,"%lf", a); // запис відповіді
-	   	fprintf(logfile,"%lf", a);
+		fprintf(answer,"%lf", a); // Р·Р°РїРёСЃ РІС–РґРїРѕРІС–РґС–
+	   	fprintf(logfile,"%lf", a); // Р·Р°РїРёСЃ СЂРµР·СѓР»СЊС‚Р°С‚Сѓ Сѓ Р»РѕРі С„Р°Р№Р»
 	   	
-		fprintf(logfile, "\n \n4.Output file “answer.txt” saved - %s", ctime(&tm)); 
+		fprintf(logfile, "\n \n4.Output file вЂњanswer.txtвЂќ saved - %s", ctime(&tm)); 
 		
 		fprintf(logfile, "\n5.End - %s", ctime(&tm)); 
 	
@@ -62,15 +62,15 @@ int main()
 		a=pow(x+pow(fabs(y),1.0/4),1.0/3);
 		
 		
-		fprintf(logfile, "\n2.Parameters file “answer.bin” opened - %s", ctime(&tm)); // час відкриття файлу
+		fprintf(logfile, "\n2.Parameters file вЂњanswer.binвЂќ opened - %s", ctime(&tm)); // С‡Р°СЃ РІС–РґРєСЂРёС‚С‚СЏ С„Р°Р№Р»Сѓ
 		fprintf(logfile,"X=%lf \t Y=%lf", x,y);
-		FILE *answer = fopen("answer", "wb"); // відкриття файлу для відповіді
+		FILE *answer = fopen("answer", "wb"); // РІС–РґРєСЂРёС‚С‚СЏ С„Р°Р№Р»Сѓ РґР»СЏ РІС–РґРїРѕРІС–РґС–
 		
 		fprintf(logfile, "\n \n3.Expression calculated - %s", ctime(&tm)); 
-		fprintf(answer,"%lf", a); // запис відповіді
+		fprintf(answer,"%lf", a); // Р·Р°РїРёСЃ РІС–РґРїРѕРІС–РґС–
 	   	fprintf(logfile,"%lf", a);
 	   	
-		fprintf(logfile, "\n \n4.Output file “answer.bin” saved - %s", ctime(&tm)); 
+		fprintf(logfile, "\n \n4.Output file вЂњanswer.binвЂќ saved - %s", ctime(&tm)); 
 		
 		fprintf(logfile, "\n5.End - %s", ctime(&tm)); 
 	
